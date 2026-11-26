@@ -54,7 +54,7 @@ athan-caster/
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Osa1989/Athan-Caster.git
 cd athan-caster
 ```
 
