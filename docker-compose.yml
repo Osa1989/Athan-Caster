@@ -1,0 +1,32 @@
+services:
+  athan-caster:
+    build:
+      context: .
+      network: host
+    container_name: athan-caster
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      SPEAKER_NAME: "Living Room Speaker"
+      LATITUDE: "50.1109"
+      LONGITUDE: "8.6821"
+      TZ: "Europe/Berlin"
+      # Supported CALCULATION_METHOD values:
+      #   MUSLIM_WORLD_LEAGUE
+      #   EGYPTIAN
+      #   KARACHI
+      #   UMM_AL_QURA
+      #   DUBAI
+      #   MOON_SIGHTING_COMMITTEE
+      #   NORTH_AMERICA
+      #   KUWAIT
+      #   QATAR
+      #   SINGAPORE
+      #   UOIF
+      CALCULATION_METHOD: "MUSLIM_WORLD_LEAGUE"
+      HTTP_PORT: "8089"
+      AUDIO_DIR: "/app/audio"
+      VOLUMES_FILE: "/app/volumes.json"
+    volumes:
+      - ./audio:/app/audio:ro
+      - ./volumes.json:/app/volumes.json

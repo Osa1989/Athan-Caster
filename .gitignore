@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# User audio files (keep audio/.gitkeep)
+audio/*.mp3
+
+# Editor / OS temporary files
+*.swp
+*.swo
+*~
+.DS_Store

@@ -1,0 +1,22 @@
+{
+  "Fajr": {
+    "volume": 15,
+    "enabled": true
+  },
+  "Dhuhr": {
+    "volume": 60,
+    "enabled": true
+  },
+  "Asr": {
+    "volume": 60,
+    "enabled": true
+  },
+  "Maghrib": {
+    "volume": 60,
+    "enabled": true
+  },
+  "Isha": {
+    "volume": 40,
+    "enabled": true
+  }
+}
